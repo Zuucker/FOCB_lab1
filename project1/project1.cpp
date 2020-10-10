@@ -1,12 +1,19 @@
 ﻿#include <iostream>
-#include <cmath>
+#include <array>
 using namespace std;
 
 int main()
 {
-	for (int i = 0; i <= 360; i++)
+	array<int, 100> data;
+
+	for (int i = 0; i < 100; i++)
 	{
-		cout << "Angle: " << i << " / sine = " << cos(i)<<endl;
+		data[i] = i;
+	}
+
+	for (int i = 0; i < 100; i++)
+	{
+		cout << data[i] << endl;
 	}
 
 	return 0;
