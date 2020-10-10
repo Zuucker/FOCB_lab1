@@ -3,16 +3,20 @@ using namespace std;
 
 int main()
 {
-	int times;
+	int totalMoney;
 
-	cout<<"Please introduce the number of times you want to "<<endl;
-	cout<<"repeat the sentence: "<<endl;
-	cin >> times;
+	cout << "Please introduce an amount of money: " << endl;
+	cin >> totalMoney;
 
-	for (int i = 0; i < times; i++)
+	int banknotes=0;
+
+	while (totalMoney >= 50)
 	{
-		cout << "this is an exaple" << endl;
+		totalMoney -= 50;
+		banknotes++;
+
 	}
+	cout << "number of banknotes: " << banknotes << endl;
 
 	return 0;
 }
