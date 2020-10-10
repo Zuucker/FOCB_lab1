@@ -1,20 +1,21 @@
 ﻿#include <iostream>
 #include <array>
+#include <cstdlib>
 using namespace std;
 
 int main()
 {
-	array<int, 100> data;
+	array<int, 10> data = {58,4,5,6,3,8,2,9,15,7};
+	int smallest=data[0];
 
-	for (int i = 0; i < 100; i++)
+	for (int i = 0; i < 10; i++)
 	{
-		data[i] = i;
+		if (data[i] < smallest)
+		{
+			smallest = data[i];
+		}
 	}
-
-	for (int i = 0; i < 100; i++)
-	{
-		cout << data[i] << endl;
-	}
+	cout << "Smalest number is: " <<smallest<<endl;
 
 	return 0;
 }
