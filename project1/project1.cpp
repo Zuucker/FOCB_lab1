@@ -3,39 +3,16 @@ using namespace std;
 
 int main()
 {
-	int myNumb;
-	float a,b,c;
+	int times;
 
-	cout << "please introduce a " << endl;
-	cin >> a;
-	cout << "please introduce b " << endl;
-	cin >> b;
-	cout << "please introduce c " << endl;
-	cin >> c;
+	cout<<"Please introduce the number of times you want to "<<endl;
+	cout<<"repeat the sentence: "<<endl;
+	cin >> times;
 
-	float x = (c - b) / a;
-
-	cout << "The x is " << x << "! " << "More stuff!" << endl;
-
-
-
-
-
-
-
-
-	/*
-	cout << "Hello World"<<endl;
-	cout << "give me a number pls ";
-	cin >> myNumb;
-	cout << "You gave me a " << myNumb << "!" << endl;
-	if (myNumb % 2 == 0) {
-
-		cout << "And the number is even!" << endl;
+	for (int i = 0; i < times; i++)
+	{
+		cout << "this is an exaple" << endl;
 	}
-	else{
-		cout << "And the number is odd!" << endl;
-	}
-	*/
+
 	return 0;
 }
